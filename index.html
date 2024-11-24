@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Chata k Pronájmu</title>
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles_2.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta name="description" content="Pronájem útulné chaty v krásném prostředí. Ideální místo pro relaxaci a únik od každodenního shonu.">
+        <meta name="keywords" content="pronájem chaty, ubytování, dovolená, relaxace">
+        <meta name="author" content="Vaše Jméno">
+    </head>
+<body>
+
+<!-- Lista nahore -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Chata k Pronájmu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#uvod">Úvod</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#calendar">Rezervace</a></li>
+            <li class="nav-item"><a class="nav-link" href="#map">Mapa</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-4">Vítejte v naší chatě</h1>
+        <p class="lead">Ideální místo pro relaxaci a únik od každodenního shonu.</p>
+    </div>
+</header>
+
+<section id="uvod" class="container mt-5 pt-5 centered-section">
+    <h3 class="text-center mb-4">
+        Nabízíme ubytování pro rodiny, skupiny přátel či pro páry, kteří si chtějí užít romantickou dovolenou v soukromí.
+    </h3>
+    <p class="lead text-center">
+        Naše dřevěná chata perfektně zapadá do atmosféry místní přírody. 
+        Ubytovat můžeme až 6 osob. K dispozici máme dvě ložnice, v každé z nich je jedna velká manželská postel. 
+        Další dvě lůžka jsou možné na velké rozkládací pohovce v dolní části chaty.
+    </p>
+    <p class="lead text-center">
+        Koupelna je kompletně vybavená a disponuje vším, co byste mohli potřebovat. Je propojená s finskou saunou 
+        a pro ochlazení můžete použít dvě sprchy. Nechybí ani pračka se sušičkou a dostatek úložného prostoru.
+    </p>
+</section>
+
+<section id="gallery" class="container mt-5 centered-carousel-section">
+    <h2 class="text-center mb-4">Galerie</h2>
+    
+    <!-- Koupelna -->
+    <section class="container mt-5">
+        <h3 class="text-center mb-4">Koupelna</h3>
+        <div id="bathroomCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Dynamicky naplněno JS -->
+            </div>
+            <a class="carousel-control-prev" href="#bathroomCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bathroomCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Kuchyň a jídelna -->
+    <section class="container mt-5">
+        <h3 class="text-center mb-4">Kuchyň, jídelna a obývací pokoj</h3>
+        <div id="kitchenCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Dynamicky naplněno JS -->
+            </div>
+            <a class="carousel-control-prev" href="#kitchenCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#kitchenCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Ložnice -->
+    <section class="container mt-5">
+        <h3 class="text-center mb-4">Ložnice</h3>
+        <div id="bedroomCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Dynamicky naplněno JS -->
+            </div>
+            <a class="carousel-control-prev" href="#bedroomCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bedroomCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- Exteriér -->
+    <section class="container mt-5">
+        <h3 class="text-center mb-4">Exteriér</h3>
+        <div id="exteriorCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Dynamicky naplněno JS -->
+            </div>
+            <a class="carousel-control-prev" href="#exteriorCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#exteriorCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- Okolí -->
+    <section class="container mt-5">
+        <h3 class="text-center mb-4">Okolí</h3>
+        <p id="okoli-text"class="lead text-center">
+            Prozkoumejte krásy okolní přírody a aktivit, které si můžete užít během svého pobytu.
+        </p>
+        <div id="surroundingsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Dynamicky generované položky karuselu -->
+            </div>
+            <!-- Ovládací prvky karuselu -->
+            <a class="carousel-control-prev" href="#surroundingsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Předchozí</span>
+            </a>
+            <a class="carousel-control-next" href="#surroundingsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Další</span>
+            </a>
+        </div>        
+    </section>
+</section>
+
+<!-- Sekce Aktivity -->
+<section id="activities" class="container mt-5">
+    <h2 class="text-center mb-4">Aktivity</h2>
+    <p class="text-center mt-3 lead">
+        Objevte širokou škálu aktivit, které můžete zažít v okolí Lipna, od cyklistiky a pěší turistiky po vodní sporty a zimní lyžování.
+    </p>
+    <div class="text-center">
+        <img src="images/Lipno-aktivity.jpeg" alt="Aktivity Lipno" class="img-fluid rounded">
+    </div>
+</section>
+
+
+<section id="calendar" class="calendar-section">
+    <h2>Rezervace</h2>
+    <div class="reservation-container">
+        <!-- Kalendář -->
+        <div id="calendar-container" class="calendar">
+            <!-- Zde by měl být vložen kalendářní kód -->
+            <p>Kalendář</p>
+        </div>
+        <!-- Rezervační formulář -->
+        <div id="reservation-form" class="hidden">
+            <h3>Rezervace</h3>
+            <form id="reservationForm">
+                <div>
+                    <label for="selected-start-date">Datum příjezdu:</label>
+                    <input type="date" id="selected-start-date" required>
+                </div>
+                <div>
+                    <label for="selected-end-date">Datum odjezdu:</label>
+                    <input type="date" id="selected-end-date" required>
+                </div>
+                <div>
+                    <label for="name">Jméno:</label>
+                    <input type="text" id="name" placeholder="Vaše jméno" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Váš email" required>
+                </div>                
+                <div>
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Váš telefon" required pattern="^(\+420\s?)?(\d{3}\s?\d{3}\s?\d{3})$" title="Zadejte telefonní číslo ve formátu +420 123 456 789 nebo 123456789">
+                </div>                
+                <button type="submit">Rezervovat</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="map" class="py-5">
+    <div class="container">
+        <h2>Mapa</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+                class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391.92837165870264!2d14.241190352296751!3d48.63722335064525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47737ace11781b51%3A0x278cd9644998c038!2sLipno%20nad%20Vltavou%20434%2C%20382%2078%20Lipno%20nad%20Vltavou!5e0!3m2!1scs!2scz!4v1716455696683!5m2!1scs!2scz"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <h3 class="text-center mb-4">Kontaktujte nás</h3>
+    <div class="contact-columns">
+        <div class="left-column">
+            <p><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/tvojeprofil" target="_blank">@tvojeprofil</a></p>
+            <p><i class="fab fa-facebook"></i> Facebook: <a href="https://facebook.com/tvojeprofil" target="_blank">tvojeprofil</a></p>
+        </div>
+        <div class="right-column">
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:tvojemail@priklad.cz">tvojemail@priklad.cz</a></p>
+            <p><i class="fas fa-phone-alt"></i> Telefon: +420 123 456 789</p>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

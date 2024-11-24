@@ -1,0 +1,549 @@
+/* Pozadí stránky */
+body {
+    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 95px; /* Last occurrence retained */
+    line-height: 1.6;
+}
+
+/* Jumbotron */
+.jumbotron {
+    margin-top: 0;
+    padding: 5% 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/exterier-leto.jpg') center center / cover no-repeat;
+    height: 60vh;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .lead {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Navigace */
+.navbar {
+    padding: 1.5rem 1rem; /* Zvýšení výšky lišty */
+    background-color: #343a40; /* Tmavší barva pro lepší kontrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Jemný stín */
+    width: 100%; /* Šířka navigace přes celou obrazovku */
+    position: fixed; /* Fixní umístění nahoře */
+    top: 0; /* Připevnění k hornímu okraji */
+    z-index: 1000; /* Zajištění viditelnosti nad ostatním obsahem */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: #ffc107;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Nadpisy */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #ffc107;
+    border-radius: 2px;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+#gallery h2::after {
+    width: 80px; /* Adjusted for #gallery */
+    height: 5px;
+}
+
+/* Sekce */
+.centered-section,
+.centered-carousel-section {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.centered-section h3,
+.centered-carousel-section h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Styl pro textové odstavce */
+p {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+#uvod p {
+    color: #555; /* Specific adjustment for #uvod */
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Galerie */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+}
+
+@media (min-width: 1920px) {
+    .carousel-inner img {
+        max-height: 750px;
+    }
+}
+
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Tlačítka v carouselu */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: background-color 0.3s;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #ffc107;
+}
+
+/* Kontakt */
+.contact-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-columns p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #555;
+}
+
+.contact-columns i {
+    margin-right: 10px;
+    color: #ffc107;
+}
+
+.contact-columns a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-columns a:hover {
+    text-decoration: underline;
+}
+
+/* Kalendář */
+.calendar {
+    max-width: 500px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hlavička kalendáře */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.calendar-nav {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-nav:hover {
+    background-color: #45a049;
+}
+
+/* Hlavička dnů v týdnu */
+.days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 stejně širokých sloupců */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Dny kalendáře */
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 stejně širokých sloupců */
+    gap: 5px;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.day.empty {
+    visibility: hidden;
+}
+
+.day.free {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.day.booked {
+    background-color: #f44336;
+    color: white;
+}
+
+.day:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+
+/* Responsivní úpravy pro sekce #uvod a #gallery na mobilních zařízeních */
+@media (max-width: 768px) {
+    #uvod,
+    #gallery {
+        max-width: 100%; /* Roztáhnutí na celou šířku obrazovky */
+        margin: 0; /* Odstranění mezery kolem sekce */
+        padding: 20px; /* Lehké odsazení obsahu od okrajů */
+        background: none; /* Odstranění bílého pozadí */
+        box-shadow: none; /* Odstranění stínu */
+        border: none; /* Odstranění ohraničení */
+    }
+
+    #uvod h3,
+    #gallery h2 {
+        color: #000000; /* Upravte podle potřeby pro lepší kontrast */
+        text-align: center; /* Zarovnání textu na střed */
+    }
+
+    #uvod p,
+    #gallery p {
+        color: #000000; /* Text černý pro čitelnost */
+        line-height: 1.6;
+    }
+
+    #gallery img {
+        width: 100%; /* Obrázky roztáhnuté přes celou šířku sekce */
+        height: auto; /* Automatické přizpůsobení výšky */
+        object-fit: cover; /* Zachování proporcí obrázků */
+    }
+
+}
+
+/* Úprava galerie: text pod obrázky */
+#gallery .carousel-caption {
+    position: static; /* Odstranění absolutního pozicování */
+    margin-top: 10px; /* Přidání mezery mezi obrázkem a textem */
+    background: none; /* Odstranění pozadí textu */
+    color: #333; /* Barva textu přizpůsobená pro čitelnost */
+    text-align: center; /* Zarovnání textu na střed */
+    font-size: 1rem; /* Velikost textu */
+    padding: 0; /* Odstranění vnitřního odsazení */
+}
+
+/* Text z JavaScriptu */
+#gallery .js-generated-text {
+    display: block; /* Ujistěte se, že text je zobrazen jako blok */
+    margin-top: 10px; /* Mezery mezi obrázkem a textem */
+    font-size: 1rem; /* Přizpůsobení velikosti textu */
+    text-align: center; /* Zarovnání na střed */
+}
+
+@media (min-width: 768px) {
+    .text-center img {
+        width: 60%; /* Zmenšení obrázku na 70 % šířky rodiče */
+        margin: 0 auto; /* Zarovnání na střed */
+        display: block; /* Zajištění správného zobrazení při změně šířky */
+    }
+}
+
+.text-center img{
+    margin-bottom: 50px; /* Přidání prostoru pod obrázkem */
+}
+
+/* Rezervační formulář */
+#reservation-form {
+    width: 100%; /* Formulář zabere plnou šířku svého rodiče */
+    max-width: 500px; /* Udržuje maximální šířku formuláře */
+    margin: 20px 0; /* Odstranění automatického vycentrování */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Skrytí přetečení obsahu */
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Přidán přechod pro zkracování formuláře i změny polohy */
+}
+
+#reservation-form form div {
+    margin-bottom: 15px;
+}
+
+#reservation-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#reservation-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#reservation-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#reservation-form button:hover {
+    background-color: #45a049;
+}
+
+#zimni-priroda {
+    width: 100%;
+    height: 400px; /* Adjust to match others */
+    object-fit: cover;
+    border-radius: 8px; /* Matches others */
+    margin-bottom: 15px;
+}
+
+.day.selected {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.day.in-range {
+    background-color: #ffe082;
+    color: #fff;
+}
+
+/* Obecné styly pro rezervační sekci */
+.reservation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Vertikální vycentrování */
+    max-width: 80%; /* Kontejner zabere max. 80 % šířky obrazovky */
+    margin: 0 auto;
+    gap: 20px; /* Výchozí mezera mezi kalendářem a formulářem */
+    transition: gap 0.3s ease-in-out; /* Plynulý přechod pro mezeru */
+}
+
+@media (min-width: 768px) {
+    .reservation-container {
+        flex-direction: row; /* Horizontální zarovnání kalendáře a formuláře */
+        justify-content: center; /* Středové zarovnání prvků */
+        align-items: flex-start; /* Zarovnání vrchních okrajů */
+        gap: 10px; /* Menší mezera mezi kalendářem a formulářem na větších obrazovkách */
+    }
+
+    #calendar-container,
+    #reservation-form {
+        flex: 1 1 auto;
+        max-width: 500px; /* Maximální šířka pro oba prvky */
+    }
+
+    #reservation-form {
+        width: 100%; /* Přizpůsobí šířku dostupnému prostoru */
+        min-width: 300px; /* Minimální šířka formuláře */
+        position: relative;
+    }
+}
+
+/* Přechodné zkrácení formuláře */
+@media (max-width: 1200px) {
+    .reservation-container {
+        justify-content: flex-start; /* Zarovnání na menších obrazovkách vlevo */
+    }
+
+    #reservation-form {
+        max-width: 400px; /* Zkrácení formuláře */
+        width: 100%;
+        left: 0; /* Zarovnání formuláře vlevo */
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Obecné styly pro formulář */
+#reservation-form {
+    background-color: #ffffff; /* Bílý podklad formuláře */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#reservation-form h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+
+#reservationForm label {
+    font-weight: bold;
+    color: #555;
+}
+
+#reservationForm input[type="text"],
+#reservationForm input[type="email"],
+#reservationForm input[type="tel"],
+#reservationForm input[type="date"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#reservationForm input[type="text"]:focus,
+#reservationForm input[type="email"]:focus,
+#reservationForm input[type="tel"]:focus,
+#reservationForm input[type="date"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+#reservationForm button[type="submit"] {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reservationForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styl pro placeholder text */
+#reservationForm input::placeholder {
+    color: #aaa;
+}
+
+/* Responsivní úpravy */
+@media (max-width: 768px) {
+    #reservation-form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    #reservationForm input {
+        font-size: 0.95rem;
+    }
+
+    #reservationForm button[type="submit"] {
+        font-size: 1.1rem;
+    }
+}
